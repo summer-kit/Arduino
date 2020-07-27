@@ -1,0 +1,14 @@
+boolean doorStatus = true; //전역변수
+
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+if (doorStatus) {
+  for (int i = 0; i<3; i++) {
+    Serial.println("Hello World");
+  }
+  doorStatus = false;
+}
+}
