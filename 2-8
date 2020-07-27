@@ -1,0 +1,15 @@
+char initMsg[]="Hello World";
+boolean doorStatus = true;
+
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+if (doorStatus) {
+  for (int i = 0; i<3; i++) {
+    Serial.println(initMsg);
+  }
+  doorStatus = false;
+}
+}
