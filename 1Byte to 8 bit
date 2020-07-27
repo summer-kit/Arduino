@@ -1,0 +1,19 @@
+unsigned char num = 158;
+boolean doorStatus = true;
+
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+if (doorStatus) {
+  Serial.print((String)num+"===> B");
+  for (int i = 7; i>= 0; i--) {
+    boolean Bit = bitRead(num,i); // read the location's bit value
+    if(Bit) Serial.print("1"); // if bit value is 1, then print 1
+    else Serial.print("0"); // unless print 0
+  }
+  Serial.println(); //line change
+  doorStatus=false;
+}
+}
