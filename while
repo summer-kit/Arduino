@@ -1,0 +1,11 @@
+int numMax = 3; //전역변수
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+while(numMax) {
+  Serial.println("Hello World");
+  numMax -- ;
+}
+}
