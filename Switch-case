@@ -1,0 +1,29 @@
+int num = 0;
+
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+switch(num) {
+  case 0 :
+  Serial.println("Hello World");
+  num++;
+  break;
+
+  case 1 :
+  Serial.println("To study Arduino is");
+  num++;
+  break;
+
+  case 2:
+  Serial.println("so interesting.");
+  num++;
+  break;
+
+  case 3:
+  Serial.println("Cheer up!");
+  num++;
+  break;
+}
+}
