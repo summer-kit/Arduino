@@ -1,0 +1,15 @@
+String LedColor[] = {"NO", "Red(R)", "Green(G)", "Blue(B)"};
+boolean doorStatus = true;
+
+void setup() {
+Serial.begin(9600);
+}
+
+void loop() {
+if (doorStatus) {
+  for (int i = 0; i<3; i++) {
+    Serial.println(LedColor[i]);
+  }
+  doorStatus = false;
+}
+}
