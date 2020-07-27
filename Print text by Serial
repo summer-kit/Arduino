@@ -1,0 +1,8 @@
+void setup() {
+Serial.begin(9600);
+Serial.println("UOS"); //문자열 출력
+}
+
+void loop() {
+
+}
